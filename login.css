@@ -1,0 +1,101 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1b26;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically if desired */
+}
+
+/* Container for the login form */
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #2a2a40;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.auth-container h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #bb86fc 0%, #e597f7 50%, #9a67ea 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #3a3a4f;
+    background-color: #1a1b26;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.auth-form input:focus {
+    border-color: #bb86fc;
+}
+
+.modern-button {
+    background: linear-gradient(135deg, #bb86fc, #9a67ea);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.modern-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(187, 134, 252, 0.3);
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-switch a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-switch a:hover {
+    color: #9a67ea;
+}
+
+.auth-back {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+.auth-back:hover {
+    color: #9a67ea;
+}

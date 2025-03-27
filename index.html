@@ -1,98 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RANDOM PASSWORD GENERATOR</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RANDOM PASSWORD GENERATOR</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>RANDOM PASSWORD GENERATOR</h1>
-        </div>
-        <div class="content">
-            <div class="generator">
-                <h2>Generate Your Password</h2>
-                <div class="length-control">
-                    <label for="passwordLength">Password Length:</label>
-                    <input type="range" id="passwordLength" name="passwordLength" min="8" max="32" value="18" class="modern-range">
-                    <span id="lengthValue">18</span>
-                </div>
-                <div class="options">
-                    <label class="modern-checkbox">
-                        <input type="checkbox" id="uppercase" checked>
-                        <span class="checkbox-text">Uppercase</span>
-                    </label>
-                    <label class="modern-checkbox">
-                        <input type="checkbox" id="numbers">
-                        <span class="checkbox-text">Numbers</span>
-                    </label>
-                    <label class="modern-checkbox">
-                        <input type="checkbox" id="lowercase">
-                        <span class="checkbox-text">Lowercase</span>
-                    </label>
-                    <label class="modern-checkbox">
-                        <input type="checkbox" id="symbols">
-                        <span class="checkbox-text">Symbols</span>
-                    </label>
-                </div>
-                <button id="generate" class="modern-button">Generate Strong Password</button>
-                <div class="password-display">
-                    <input type="text" id="password" readonly class="modern-input">
-                    <button id="copy" class="modern-button">Copy to Clipboard</button>
-                </div>
-            </div>
-            <div class="tips-container">
-                <div class="tips">
-                    <h2>Password Tips</h2>
-                    <ul>
-                        <li>🔒 Never share your password.</li>
-                        <li>📏 Use 12-16 characters.</li>
-                        <li>🔠 Mix uppercase, lowercase, numbers, and symbols.</li>
-                        <li>🚫 Avoid common words & personal info.</li>
-                        <li>🔄 Use a unique password for each account.</li>
-                        <li>🔐 Enable 2FA for extra security.</li>
-                        <li>⏰ Update passwords regularly.</li>
-                    </ul>
-                </div>
-                <div class="tips">
-                    <h2>Password Security Guide</h2>
-                    <ul>
-                        <li>🛡️ Use password managers for better security.</li>
-                        <li>📱 Enable biometric authentication when possible.</li>
-                        <li>🔍 Check for password breaches regularly.</li>
-                        <li>📝 Avoid writing passwords down physically.</li>
-                        <li>🌐 Use different password patterns for different types of accounts.</li>
-                        <li>❌ Don't use sequential numbers or letters.</li>
-                        <li>📅 Set password expiration reminders.</li>
-                    </ul>
-                </div>
-                <div class="tips">
-                    <h2>Common Password Mistakes</h2>
-                    <ul>
-                        <li>⚠️ Using personal information in passwords.</li>
-                        <li>❌ Reusing passwords across accounts.</li>
-                        <li>⚡ Using simple keyboard patterns.</li>
-                        <li>🎯 Using common word substitutions.</li>
-                        <li>📢 Sharing passwords with others.</li>
-                        <li>🔄 Not changing compromised passwords.</li>
-                        <li>📱 Using unsecured password storage.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="footer-links">
-                <a href="/terms-of-use">Terms of Use</a>
-                <a href="/privacy-policy">Privacy Policy</a>
-                <a href="/cookie-policy">Cookie Policy</a>
-            </div>
-            <div class="footer-copyright">
-                2024 © Random Password Generator
-            </div>
-        </footer>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <!-- Main Title (centered) -->
+      <h1>RANDOM PASSWORD GENERATOR</h1>
+
+      <!-- Top-right Sign In / Sign Up -->
+      <div class="auth-nav">
+        <a href="login.html" class="modern-button">Sign In</a>
+        <a href="signup.html" class="modern-button">Sign Up</a>
+      </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="generator">
+        <h2>Generate Your Password</h2>
+        <div class="length-control">
+          <label for="passwordLength">Password Length:</label>
+          <input
+            type="range"
+            id="passwordLength"
+            name="passwordLength"
+            min="8"
+            max="32"
+            value="18"
+            class="modern-range"
+          />
+          <span id="lengthValue">18</span>
+        </div>
+        <div class="options">
+          <label class="modern-checkbox">
+            <input type="checkbox" id="uppercase" checked />
+            <span class="checkbox-text">Uppercase</span>
+          </label>
+          <label class="modern-checkbox">
+            <input type="checkbox" id="numbers" />
+            <span class="checkbox-text">Numbers</span>
+          </label>
+          <label class="modern-checkbox">
+            <input type="checkbox" id="lowercase" />
+            <span class="checkbox-text">Lowercase</span>
+          </label>
+          <label class="modern-checkbox">
+            <input type="checkbox" id="symbols" />
+            <span class="checkbox-text">Symbols</span>
+          </label>
+        </div>
+        <button id="generate" class="modern-button">Generate Strong Password</button>
+        <div class="password-display">
+          <input type="text" id="password" readonly class="modern-input" />
+          <button id="copy" class="modern-button">Copy to Clipboard</button>
+        </div>
+      </div>
+
+      <div class="tips-container">
+        <!-- Tips Column 1 -->
+        <div class="tips">
+          <h2>Password Tips</h2>
+          <ul>
+            <li>🔒 Never share your password.</li>
+            <li>📏 Use 12-16 characters.</li>
+            <li>🔠 Mix uppercase, lowercase, numbers, and symbols.</li>
+            <li>🚫 Avoid common words & personal info.</li>
+            <li>🔄 Use a unique password for each account.</li>
+            <li>🔐 Enable 2FA for extra security.</li>
+            <li>⏰ Update passwords regularly.</li>
+          </ul>
+        </div>
+        <!-- Tips Column 2 -->
+        <div class="tips">
+          <h2>Password Security Guide</h2>
+          <ul>
+            <li>🛡️ Use password managers for better security.</li>
+            <li>📱 Enable biometric authentication when possible.</li>
+            <li>🔍 Check for password breaches regularly.</li>
+            <li>📝 Avoid writing passwords down physically.</li>
+            <li>🌐 Use different password patterns for different accounts.</li>
+            <li>❌ Don't use sequential numbers or letters.</li>
+            <li>📅 Set password expiration reminders.</li>
+          </ul>
+        </div>
+        <!-- Tips Column 3 -->
+        <div class="tips">
+          <h2>Common Password Mistakes</h2>
+          <ul>
+            <li>⚠️ Using personal information in passwords.</li>
+            <li>❌ Reusing passwords across accounts.</li>
+            <li>⚡ Using simple keyboard patterns.</li>
+            <li>🎯 Using common word substitutions.</li>
+            <li>📢 Sharing passwords with others.</li>
+            <li>🔄 Not changing compromised passwords.</li>
+            <li>📱 Using unsecured password storage.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/terms-of-use.html">Terms of Use</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/cookie-policy.html">Cookie Policy</a>
+      </div>
+      <div>
+        2024 © Random Password Generator
+      </div>
+    </footer>
+  </div>
+
+  <!-- Script for password generation (if any) -->
+  <script src="script.js"></script>
 </body>
 </html>

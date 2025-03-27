@@ -42,7 +42,7 @@ This is my first college project - a web-based Random Password Generator applica
 Simply clone the repository and open `index.html` in your web browser:
 
 ```bash
-git clone https://github.com/ishowprogram/Random-Password-Generator.git
+git clone   
 cd Random-Password-Generator
 ```
 

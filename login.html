@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h1>Login</h1>
+    <!-- 
+      If you do NOT want to process anything on the server, 
+      you can remove action and method, and just intercept the form submission in JS 
+    -->
+    <form id="loginForm" class="auth-form">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="modern-button">Login</button>
+    </form>
+    <p class="auth-switch">
+      Don't have an account? <a href="signup.html">Sign Up</a>
+    </p>
+    <a href="index.html" class="auth-back">Back to Home</a>
+
+    <script>
+      // JavaScript to intercept the form submission and redirect
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // stop actual form submission
+        alert('Logged in successfully!'); // optional pop-up
+        window.location.href = 'index.html'; // go back to home
+      });
+    </script>
+  </div>
+</body>
+</html>
